@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Pearls Chat</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="js/main.js" defer></script> 
+</head>
+<body>
+
+  <h1 class="appheading">EBP-Chat-Group</h1>
+
+  <input  id="searchbar" onkeyup="search()" type="text"
+  name="search" placeholder="Search for Names...">
+
+  <div  class="tab">
+    <button style = "text-align:center; font-weight:bold;  "   class="tablinks" id="defaultOpen" onclick="openCity(event, 'Anik')">ANIK</button>
+    <button style="text-align:center; font-weight:bold;" class="tablinks" onclick="openCity(event, 'Bhabin')">BHABIN</button>
+    <button style = "text-align:center; font-weight:bold;"  class="tablinks" onclick="openCity(event, 'John')">JOHN</button>
+    <button style = "text-align:center; font-weight:bold;"  class="tablinks" onclick="openCity(event, 'John')">ANUSKA</button>
+  </div>
+  
+  <div id="John" class="tabcontent">
+    <section class="msgerJohn">
+      <header class="msger-header">
+        <div class="msger-header-title">
+           JOHN
+        </div>
+      </header>
+    
+      <main class=" msger-chatJohn" >
+        <div class="msgJohn left-msg">
+            <div class="msg-infoJohn">
+              <div class="msg-info-nameJohn"></div>
+              <div class="msg-info-timeJohn"></div>
+            </div>
+        </div>
+    
+        <div class="msgJohn right-msg">
+            <div class="msg-infoJohn">
+              <div class="msg-info-nameJohn"></div>
+              <div class="msg-info-timeJohn"></div>
+            </div>
+          </div>
+      </main>
+    
+      <form class="  msger-inputareaJohn" >
+        <input type="text" class="  msger-inputJohn"  placeholder="Enter your message...">
+        <input type="file" class=" msger-imageJohn" id="myFileJohn" name="filename">
+        <button type="submit" class="msger-Send-btnJohn">Send</button>
+      </form>
+    </section>
+  </div>
+  
+  <div id="Anik" class="tabcontent">
+    <section class="msgerAnik">
+      <header class="msger-header">
+        <div class="msger-header-title">
+            ANIK
+        </div>
+      </header>
+    
+      <main class=" msger-chatAnik" id="msger-chatAnik">
+        <div class="msgAnik left-msg">
+            <div class="msg-infoAnik">
+              <div class="msg-info-nameAnik"></div>
+              <div class="msg-info-timeAnik"></div>
+            </div>
+        </div>
+    
+        <div class="msgAnik right-msg">
+            <div class="msg-infoAnik">
+              <div class="msg-info-nameAnik"></div>
+              <div class="msg-info-timeAnik"></div>
+            </div>
+        </div>
+      </main>
+    
+      <form class=" msger-inputareaAnik">
+        <input type="text" class="  msger-inputAnik"  placeholder="Enter your message...">
+        <input type="file" class=" msger-imageJohn" id="myFileAnik" name="filename">
+        <button type="submit" class="msger-Send-btnAnik">SEND</button>
+      </form>
+    </section>
+  </div>
+  
+  <div id="Bhabin" class="tabcontent">
+    <section class="msgerBhabin">
+      <header class="msger-header">
+        <div class="msger-header-title">
+            BHABIN
+        </div>
+      </header>
+    
+      <main class=" msger-chatBhabin" >
+        <div class="msgBhabin left-msg">
+            <div class="msg-infoBhabin">
+              <div class="msg-info-nameBhabin"></div>
+              <div class="msg-info-timeBhabin"></div>
+            </div>
+        </div>
+    
+        <div class="msgBhabin right-msg">
+            <div class="msg-infoBhabin">
+              <div class="msg-info-nameBhabin"></div>
+              <div class="msg-info-timeBhabin"></div>
+            </div>
+        </div>
+      </main>
+    
+      <form class=" msger-inputareaBhabin" >
+        <input type="text" class="  msger-inputBhabin" placeholder="Enter your message...">
+        <input type="file" class=" msger-imageJohn" id="myFileBhabin" name="filename">
+        <button type="submit" class="msger-Send-btn">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <div style="text-align:center;" class="notify">
+    <h1 style="text-align:center"><u>Notifications</u></h1>
+    <p id = "johnNotify">  </p>
+    <p id = "AnikNotify">  </p>
+    <p id = "BhabinNotify">  </p>
+</div>
+</body>
+</html>
